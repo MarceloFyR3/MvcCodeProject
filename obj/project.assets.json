@@ -13147,11 +13147,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Projetos\\MvcCodeProject\\ProjetoMvc.csproj",
+      "projectUniqueName": "c:\\Projetos\\MvcCodeProject\\ProjetoMvc.csproj",
       "projectName": "ProjetoMvc",
-      "projectPath": "C:\\Projetos\\MvcCodeProject\\ProjetoMvc.csproj",
+      "projectPath": "c:\\Projetos\\MvcCodeProject\\ProjetoMvc.csproj",
       "packagesPath": "C:\\Users\\mfreitas\\.nuget\\packages\\",
-      "outputPath": "C:\\Projetos\\MvcCodeProject\\obj\\",
+      "outputPath": "c:\\Projetos\\MvcCodeProject\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
