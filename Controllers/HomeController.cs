@@ -17,14 +17,14 @@ namespace ProjetoMvc.Controllers
 
         public IActionResult About()
         {
-            ViewData["Message"] = "Your application description page.";
+            ViewData["Message"] = "Este projeto é de uso público, o objetivo dele é testar funcionalidades com o VS Code. A fins de somar conhecimentos. ";
 
             return View();
         }
 
         public IActionResult Contact()
         {
-            ViewData["Message"] = "Your contact page.";
+            ViewData["Message"] = "Página de Contato.";
 
             return View();
         }
