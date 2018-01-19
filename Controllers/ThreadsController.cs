@@ -5,6 +5,7 @@ using System.Linq;
 using System.Threading;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.AspNetCore.Mvc.Rendering;
 using ProjetoMvc.Models;
 
 namespace ProjetoMvc.Controllers
@@ -14,7 +15,20 @@ namespace ProjetoMvc.Controllers
         // GET: Threads
         public ActionResult Index()
         {
+            List<SelectListItem> li = new List<SelectListItem>();
+            li.Add(new SelectListItem { Text = "--Selecione--", Value = "0" });
+            li.Add(new SelectListItem { Text = "Single-Threads", Value = "1" });
+            li.Add(new SelectListItem { Text = "Multi-Threads", Value = "2" });
+            li.Add(new SelectListItem { Text = "Multi-Threads Assincrôno", Value = "3" });
+          
+            ViewData["tipoThreads"] = li;
 
+            return View();
+        }
+
+        [HttpPost]
+        public ActionResult Index(Threads formView)
+        {
             return View();
         }
 
