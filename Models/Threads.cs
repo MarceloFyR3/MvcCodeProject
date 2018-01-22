@@ -12,6 +12,7 @@ namespace ProjetoMvc.Models
         public int Numero { get; set; }
         public string Resultado { get; set; }
         public string ddlTipo { get; set; }
+        public string ErroSelect { get; set; }
 
     }
 

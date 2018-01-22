@@ -4,7 +4,13 @@
     ViewBag.Title = "Threads";
     Layout = "~/Views/Shared/_Layout.cshtml";
 }
-
+<style type="text/css">
+    .erro {
+        color: #cc092f;
+        margin-left: 0px;
+        font-size: 10px;
+    }
+</style>
 
 <div class="jumbotron text-center">
   <h1>Brincando com Threads</h1>
@@ -23,7 +29,9 @@
                 <div class="col-md-6">
                     <div class="form-group">
                         <label for="ddlTipo">Selecione uma função:</label>
-                        @Html.DropDownList("ddlTipo", ViewData["tipoThreads"] as List<SelectListItem>, new { @class = "form-control", Name = "formView.ddlTipo" })    
+                        @Html.DropDownList("ddlTipo", ViewData["tipoThreads"] as List<SelectListItem>, new { @class = "form-control", Name = "formView.ddlTipo" })  
+                        @Html.Label("ErroSelect","*Selecione uma Ação", new { @class = "form-label erro",  Name = "formView.ErroSelect" }) 
+                                          
                     </div>
                     <div class="form-group">
                         <div class="pull-right">
@@ -31,9 +39,17 @@
                             <button class="btn btn-primary" type="submit" id="btnSalvar">Simular</button>
                         </div>
                     </div>
-                </div>               
+                </div>   
+                <div class="col-md-3"></div>            
             }           
         </div>
     </div>
     
 </div>
+
+@section Scripts
+{    
+    <script type="text/javascript">
+    
+    </script>    
+}

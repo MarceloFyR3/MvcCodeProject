@@ -15,13 +15,7 @@ namespace ProjetoMvc.Controllers
         // GET: Threads
         public ActionResult Index()
         {
-            List<SelectListItem> li = new List<SelectListItem>();
-            li.Add(new SelectListItem { Text = "--Selecione--", Value = "0" });
-            li.Add(new SelectListItem { Text = "Single-Threads", Value = "1" });
-            li.Add(new SelectListItem { Text = "Multi-Threads", Value = "2" });
-            li.Add(new SelectListItem { Text = "Multi-Threads Assincrôno", Value = "3" });
-          
-            ViewData["tipoThreads"] = li;
+            CarregarSelect();
 
             return View();
         }
@@ -29,7 +23,28 @@ namespace ProjetoMvc.Controllers
         [HttpPost]
         public ActionResult Index(Threads formView)
         {
-            return View();
+            int tipoexemplo = Convert.ToInt32(formView.ddlTipo);
+            var erro = formView.ErroSelect;
+
+            if (tipoexemplo == 0)
+            {
+
+            }
+
+            CarregarSelect();
+
+            return View(formView);
+        }
+
+        private void CarregarSelect()
+        {
+            List<SelectListItem> li = new List<SelectListItem>();
+            li.Add(new SelectListItem { Text = "--Selecione--", Value = "0" });
+            li.Add(new SelectListItem { Text = "Single-Threads", Value = "1" });
+            li.Add(new SelectListItem { Text = "Multi-Threads", Value = "2" });
+            li.Add(new SelectListItem { Text = "Multi-Threads Assincrôno", Value = "3" });
+
+            ViewData["tipoThreads"] = li;
         }
 
         private static void InstanciaThread()
