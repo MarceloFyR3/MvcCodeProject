@@ -13141,28 +13141,30 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\mfreitas\\.nuget\\packages\\": {},
+    "C:\\Users\\marce\\.nuget\\packages\\": {},
     "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "c:\\Projetos\\MvcCodeProject\\ProjetoMvc.csproj",
+      "projectUniqueName": "D:\\ProjetosFyR3\\beta\\MvcCodeProject\\ProjetoMvc.csproj",
       "projectName": "ProjetoMvc",
-      "projectPath": "c:\\Projetos\\MvcCodeProject\\ProjetoMvc.csproj",
-      "packagesPath": "C:\\Users\\mfreitas\\.nuget\\packages\\",
-      "outputPath": "c:\\Projetos\\MvcCodeProject\\obj\\",
+      "projectPath": "D:\\ProjetosFyR3\\beta\\MvcCodeProject\\ProjetoMvc.csproj",
+      "packagesPath": "C:\\Users\\marce\\.nuget\\packages\\",
+      "outputPath": "D:\\ProjetosFyR3\\beta\\MvcCodeProject\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
       ],
       "configFilePaths": [
-        "C:\\Users\\mfreitas\\AppData\\Roaming\\NuGet\\NuGet.Config"
+        "C:\\Users\\marce\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
         "netcoreapp2.0"
       ],
       "sources": {
+        "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {

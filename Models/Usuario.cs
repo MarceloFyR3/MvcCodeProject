@@ -13,6 +13,8 @@ namespace ProjetoMvc.Models
         public string Email { get; set; }
         public string Login { get; set; }
         public string Senha { get; set; }
+
+        [DisplayFormat(ApplyFormatInEditMode = true, DataFormatString ="{0: dd/MM/yyyy}")]
         public DateTime DataNascimento { get; set; }
         public DateTime DataInclusao { get; set; }
     }

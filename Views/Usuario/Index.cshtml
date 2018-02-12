@@ -1,65 +1,64 @@
 @model IEnumerable<ProjetoMvc.Models.Usuario>
 
 @{
-    ViewData["Title"] = "Index";
+    ViewData["Title"] = "Usuário";
 }
 
-<h2>Index</h2>
+<div class="jumbotron text-center">
+  <h2><strong>Usuário</strong></h2>
+  <h4>Crud com Entity Framework(Code First) de um cadastro de usuário, está tela lista os usuário cadastrado, na tablebela que lista os usuário é possivel selecionar uma ação para cada usuário.</h4>
+  <h4>Sendo possível a criação de um novo usuário</h4> 
+</div>
 
-<p>
-    <a asp-action="Create">Create New</a>
-</p>
-<table class="table">
-    <thead>
-        <tr>
-                <th>
-                    @Html.DisplayNameFor(model => model.Nome)
-                </th>
-                <th>
-                    @Html.DisplayNameFor(model => model.Email)
-                </th>
-                <th>
-                    @Html.DisplayNameFor(model => model.Login)
-                </th>
-                <th>
-                    @Html.DisplayNameFor(model => model.Senha)
-                </th>
-                <th>
-                    @Html.DisplayNameFor(model => model.DataNascimento)
-                </th>
-                <th>
-                    @Html.DisplayNameFor(model => model.DataInclusao)
-                </th>
-            <th></th>
-        </tr>
-    </thead>
-    <tbody>
-@foreach (var item in Model) {
-        <tr>
-            <td>
-                @Html.DisplayFor(modelItem => item.Nome)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.Email)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.Login)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.Senha)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.DataNascimento)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.DataInclusao)
-            </td>
-            <td>
-                <a asp-action="Edit" asp-route-id="@item.IdUsaurio">Edit</a> |
-                <a asp-action="Details" asp-route-id="@item.IdUsaurio">Details</a> |
-                <a asp-action="Delete" asp-route-id="@item.IdUsaurio">Delete</a>
-            </td>
-        </tr>
+<div class="row-fluid">    
+    <div class="panel panel-default">
+        <div class="panel-heading">
+            Lista de Usuários
+            <div class="btn-group pull-right">
+               <a class="btn btn-primary btn-xs pull-right" data-toggle="tooltip" data-placement="top" title="Cadastrar Usuário" asp-action="Create"><i class="fas fa-plus"></i></a>
+            </div>            
+        </div>
+        <div class="panel-body">
+            <table class="table table-responsive table-striped table-hover table-condensed table-bordered">
+                <thead>
+                    <tr>
+                        <th>@Html.DisplayNameFor(model => model.Nome)</th>
+                        <th class="text-center">@Html.DisplayNameFor(model => model.Email)</th>
+                        <th class="text-center">@Html.DisplayNameFor(model => model.Login)</th>
+                        <th class="text-center">@Html.DisplayNameFor(model => model.Senha)</th>
+                        <th class="text-center">@Html.DisplayNameFor(model => model.DataNascimento)</th>
+                        <!-- <th class="text-center">@Html.DisplayNameFor(model => model.DataInclusao)</th> -->
+                        <th class="text-center">Ações</th>            
+                    </tr>
+                </thead>
+                <tbody>
+                    <p></p>
+                    @foreach (var item in Model) {
+                        <tr>
+                            <td>@Html.DisplayFor(modelItem => item.Nome)</td>
+                            <td class="text-center">@Html.DisplayFor(modelItem => item.Email)</td>
+                            <td class="text-center">@Html.DisplayFor(modelItem => item.Login)</td>
+                            <td class="text-center">@Html.DisplayFor(modelItem => item.Senha)</td>
+                            <td class="text-center">@Html.DisplayFor(modelItem => item.DataNascimento)</td>
+                            <!--<td class="text-center">@Html.DisplayFor(modelItem => item.DataInclusao)</td>-->
+                            <td class="text-center">
+                                <a class="btn btn-primary btn-sm" data-toggle="tooltip" data-placement="top" title="Editar Usuário" asp-action="Edit" asp-route-id="@item.IdUsaurio"><i class="fas fa-edit"></i></a>&nbsp;&nbsp;
+                                <a class="btn btn-info btn-sm" data-toggle="tooltip" data-placement="top" title="Ver detalhes Usuário" asp-action="Details" asp-route-id="@item.IdUsaurio"><i class="fas fa-external-link-alt"></i></a>&nbsp;&nbsp;
+                                <a class="btn btn-danger btn-sm" data-toggle="tooltip" data-placement="top" title="Deletar Usuário" asp-action="Delete" asp-route-id="@item.IdUsaurio"><i class="fas fa-trash"></i></a>
+                             </td>
+                        </tr>
+                    }
+                </tbody>
+            </table>
+        </div>
+    </div>        
+</div>
+
+@section Scripts
+{    
+    <script type="text/javascript">
+        $(function () {
+            $('[data-toggle="tooltip"]').tooltip()
+        })
+    </script>    
 }
-    </tbody>
-</table>

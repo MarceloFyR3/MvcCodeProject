@@ -18,3 +18,13 @@ c:\Projetos\MvcCodeProject\obj\Debug\netcoreapp2.0\ProjetoMvc.AssemblyInfoInputs
 c:\Projetos\MvcCodeProject\obj\Debug\netcoreapp2.0\ProjetoMvc.AssemblyInfo.cs
 c:\Projetos\MvcCodeProject\obj\Debug\netcoreapp2.0\ProjetoMvc.dll
 c:\Projetos\MvcCodeProject\obj\Debug\netcoreapp2.0\ProjetoMvc.pdb
+d:\ProjetosFyR3\beta\MvcCodeProject\bin\Debug\netcoreapp2.0\ProjetoMvc.deps.json
+d:\ProjetosFyR3\beta\MvcCodeProject\bin\Debug\netcoreapp2.0\ProjetoMvc.runtimeconfig.json
+d:\ProjetosFyR3\beta\MvcCodeProject\bin\Debug\netcoreapp2.0\ProjetoMvc.runtimeconfig.dev.json
+d:\ProjetosFyR3\beta\MvcCodeProject\bin\Debug\netcoreapp2.0\ProjetoMvc.dll
+d:\ProjetosFyR3\beta\MvcCodeProject\bin\Debug\netcoreapp2.0\ProjetoMvc.pdb
+d:\ProjetosFyR3\beta\MvcCodeProject\obj\Debug\netcoreapp2.0\ProjetoMvc.csproj.CoreCompileInputs.cache
+d:\ProjetosFyR3\beta\MvcCodeProject\obj\Debug\netcoreapp2.0\ProjetoMvc.AssemblyInfoInputs.cache
+d:\ProjetosFyR3\beta\MvcCodeProject\obj\Debug\netcoreapp2.0\ProjetoMvc.AssemblyInfo.cs
+d:\ProjetosFyR3\beta\MvcCodeProject\obj\Debug\netcoreapp2.0\ProjetoMvc.dll
+d:\ProjetosFyR3\beta\MvcCodeProject\obj\Debug\netcoreapp2.0\ProjetoMvc.pdb
